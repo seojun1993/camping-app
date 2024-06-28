@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import {Routes, Route} from 'react-router-dom';
+import './assets/styles/common/reset.css';
+import './assets/styles/common/font.css';
+import './assets/styles/common/common.css';
+import Login from './page/Login';
+import Button from './assets/styles/component/Button';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <Login />
+        <Button disabled={true} size={'lg'} variant={'success'} children={'BUTTON'} />
+      </div>
     </div>
   );
 }
