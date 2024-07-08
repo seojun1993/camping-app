@@ -29,7 +29,7 @@ const BACKGROUND = {
   
   rblue : css`
   color:var(--main-blue);
-  border:1px solid var(--main-blue);
+  border:2px solid var(--main-blue);
   `,
 
   white : css`
@@ -82,13 +82,14 @@ const getButtonStyle = ({ size, bg, radius, shadow }) => css`
   align-items: center;
   margin: 0;
   cursor: pointer;
+  font-weight:bold;
 `;
 
-const Button = ({ disabled = false, size, bg, radius, txt, shadow }) => {
+const Button = ({ disabled = false, size, bg, radius, txt, shadow, event }) => {
   const buttonStyle = getButtonStyle({ size, bg, radius, shadow });
 
   return (
-    <StyledButton disabled={disabled} css={buttonStyle}>
+    <StyledButton disabled={disabled} css={buttonStyle} onClick={event}>
       {txt}
     </StyledButton>
   );

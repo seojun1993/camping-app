@@ -1,0 +1,9 @@
+.guide-wrap{padding-top: 20%}
+.guide-wrap .swiper-slide{padding: 5% 10%;}
+.guide-wrap .swiper-slide li{box-shadow: 0 3px 6px rgba(0, 0, 0, .16);}
+.guide-wrap .swiper-slide li .img{}
+.guide-wrap .swiper-slide li .img img{max-height: 345px; object-fit: cover;}
+.guide-wrap .swiper-slide li .txt{background-color: var(--main-white); text-align: center; padding: 2rem;}
+.guide-wrap .swiper-slide li .txt h2{}
+.guide-wrap .swiper-slide li .txt p{padding-top: 1rem;}
+.swiper-slide-shadow {display: none !important;}
