@@ -18,7 +18,6 @@ const Signup = () => {
   const [pwComparison, setPwComparison] = useState(false);
 
   const changeStatus = (index) => {
-    console.log(index);
     index === 0 ? setPwStatus(!pwStatus) : setChkPwStatus(!chkPwStatus)
   }
 
@@ -26,15 +25,15 @@ const Signup = () => {
     setChkPassword(e.target.value)
   }
 
-  const loginUser = (e) => {
+  const signUpUser = (e) => {
     console.log(name, email, password, chkPassword)
     e.preventDefault();
-    // navigate('/');
+    navigate('/');
   } 
 
   return (
-    <div className='signup-wrap'>
-      <form onSubmit={(e) => {loginUser(e)}}>
+    <div className='form-wrap'>
+      <form onSubmit={(e) => {signUpUser(e)}}>
         <div className='input-box signup-name'>
           <span>이름</span>
           <input type="text" onChange={(e) => setName(e.target.value)}/>

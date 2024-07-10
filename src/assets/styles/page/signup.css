@@ -1,9 +1,8 @@
-.signup-wrap{}
-.signup-wrap input{width: 100%; display:block; height: 45px; border-bottom: 1px solid black;}
-.signup-wrap form{}
-.signup-wrap form .input-box{position: relative; margin-top: 4.5rem;}
-.signup-wrap form .input-box span{transition: all 1s;}
-/* .signup-wrap form .input-box:not(.active) span{position: absolute; top: 50%; transform: translateY(-50%);} */
-.signup-wrap form .input-box.signup-pw.danger{border-bottom: 1px solid var(--main-red);}
+.form-wrap{}
+.form-wrap input{width: 100%; display:block; height: 45px; border-bottom: 1px solid black;}
+.form-wrap form{}
+.form-wrap form .input-box{position: relative; margin-top: 4.5rem;}
+.form-wrap form .input-box span{transition: all 1s;}
+.form-wrap form .input-box.signup-pw.danger{border-bottom: 1px solid var(--main-red);}
 
 .pw-status{position: absolute; right: 0; top: 50%; transform: translateY(-50%); cursor: pointer;}
