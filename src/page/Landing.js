@@ -1,7 +1,8 @@
 import React from 'react';
 import Button from '../components/Button';
-import '../assets/styles/page/login.css';
 import { Link } from 'react-router-dom';
+
+import '../assets/styles/page/login.css';
 
 const Landing = () => {
 
